@@ -1,0 +1,1 @@
+INSERT INTO public.people_employment (id, organization_name, short_organization_name, type_participant, position_leader_organization, fio_leader_organization, position_responsible_person, fio_responsible_person, telephone_number, email) VALUES (1, 'fdgdfh', 'fdgdfgdr', 'РО - региональный оператор', 'fdgdgdfg', 'fgdfgf', 'fdgdfg', 'dfgdfg', '5434543', 'fgdgfdgd@sdfgsdg.odsfsdf');

@@ -1,0 +1,114 @@
+:root {
+    --widthForm: 500px;
+    --widthMain: 700px;
+}
+
+body {
+    margin: 0;
+}
+
+/* 
+TOP PAGE
+*/
+
+.top {
+    padding-top: 100px;
+    background-color: #003b94;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-bottom: 20px;
+}
+
+.top .images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;    
+}
+
+.top img {
+    width: 100px;
+    height: 100px;
+}
+
+.top .title {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.top h1 {
+    font-size: 20px;
+}
+
+.top span {
+    font-size: 40px;
+}
+
+.box {
+    background-color: #0053cf;
+    width: 100%;
+    color: white;
+    padding: 20px;
+}
+
+/* 
+FORM CONTENT
+*/
+
+.description {
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    width: var(--widthMain);
+    flex-direction: column;
+}
+
+.description span {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+input[type="text"], input[type="number"], input[type="email"],
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus, textarea {
+    background-color: #0043a4;
+    color: white;
+}
+
+.form-select {
+    background-color: #0043a4 !important;
+    color: white !important;
+} 
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.form .input_form {
+    display: flex;
+    flex-direction: column;
+    width: var(--widthForm);
+    gap: 10px;
+}
+
+.form .form-control {
+    height: 60px;
+}
+
+.send {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    background-color: white;
+    color: #0059ff;
+    font-weight: 600;
+}

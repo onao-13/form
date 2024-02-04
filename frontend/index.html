@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница опроса</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<body>
+    <div class="top">
+        <div class="images">
+            <img src="/static/img/image1.png" alt="">
+            <img src="/static/img/image2.png" alt="">
+            <img src="/static/img/image3.png" alt="">
+            <img src="/static/img/image4.png" alt="">
+            <img src="/static/img/image5.png" alt="">
+        </div>
+        <h1 class="title">
+            ФЕДЕРАЛЬНЫЙ ПРОЕКТ <br> 
+            <span>«СОДЕЙСТВИЕ ЗАНЯТОСТИ»</span>
+        </h1>
+    </div>
+    <div class="box">
+        <div class="form">
+            <p class="description">
+                <span>Уважаемые партнеры!</span> <br>
+                Просим вас пройти предварительную регистрацию для участия в проекте, реализуемом Институтом профессионального образования (ИРПО)
+        в качестве федерального оператора федерального проекта
+        «Содействие занятости» национального проекта «Демография».
+            </p>
+            <div class="org__name input_form">
+                <strong>Наименование организации</strong>
+                <input class="form-control" type="text" name="organization_name" id="organization_name">
+            </div>
+            <div class="short__org__name input_form">
+                <strong>Наименование организации (сокращенное, в соответствии с Уставом)</strong>
+                <input class="form-control" type="text" name="short_organization_name" id="short_organization_name">
+            </div>
+            <div class="type_empl input_form">
+                <strong>Тип участника</strong>
+                <p>согласно классификации п. 2 проекта Порядка предварительного квалификационного отбора (ПКО) организаций, осуществляющих образовательную деятельность в субъектах Российской Федерации в рамках Проекта «Содействие занятости»)</p>
+                <select name="type_employment" id="type_employment" class="form-select">
+                    <option value="РО - региональный оператор">РО - региональный оператор</option>
+                    <option value="ЦО - центр обучения">ЦО - центр обучения</option>
+                    <option value="ФОЦ - федеральный образовательный центр">ФОЦ - федеральный образовательный центр</option>
+                </select>
+            </div>
+            <div class="pos__lead__name input_form">
+                <strong>Должность руководителя организации</strong>
+                <input class="form-control" type="text" name="position_leader_organization" id="position_leader_organization">
+            </div>
+            <div class="fio__lead__name input_form">
+                <strong>ФИО руководителя</strong>
+                <input class="form-control" type="text" name="fio_leader_organization" id="fio_leader_organization">
+            </div>
+            <div class="pos__resp__name input_form">
+                <strong>Должность ответственного лица</strong>
+                <input class="form-control" type="text" name="position_responsible_person" id="position_responsible_person">
+            </div>
+            <div class="fio__resp__name input_form">
+                <strong>ФИО ответственного лица</strong>
+                <input class="form-control" type="text" name="fio_responsible_person" id="fio_responsible_person">
+            </div>
+            <div class="num input_form">
+                <strong>Телефон</strong>
+                <input class="form-control"  pattern="+7 (999) 999-99-99" type="number" name="number" id="number">
+            </div>
+            <div class="mail input_form">
+                <strong>Эл.почта</strong>
+                <input class="form-control" type="email" name="email" id="email">
+            </div>
+            <button class="send" id="send" data-bs-toggle="modal" data-bs-target="#send-info">Отправить</button>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" id="send-info">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 id="modal-title" class="modal-title fs-5">Данные отправлены</h1>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body" id="error">
+                    Данные успешно отправлены нам! Скоро мы с вами свяжемся
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    <button class="btn btn-primary" data-bs-dismiss="modal">Продолжить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/static/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/static/script.js"></script>
+</body>
+</html>
