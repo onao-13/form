@@ -1,4 +1,4 @@
-const API = "http://37.140.241.38:8150//api/send";
+const API = "http://37.140.241.38:8150/api/send";
 
 document.querySelector("#send").addEventListener('click', () => send());
 
